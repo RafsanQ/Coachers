@@ -1,7 +1,8 @@
 // The port Number
 const PORT = 5555;
 
-app = require("./app.js");
+const app = require("./app");
+require('dotenv').config();
 
 app.listen(PORT, ()=>{
     console.log("Running on Port " + PORT);
